@@ -1,19 +1,38 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="relative flex flex-col min-h-screen ">
-      <div className="absolute top-1 left-[400px]">
-        <Image src="/shadowTop.svg" alt={"shadowSvg"} width={682} height={221}/>
+    <main className="relative flex flex-col   min-h-screen w-full ">
+      <div className="fixed top-[-200px] left-[430px] w-[722px] shadow-[0_210px_430px_55px_rgba(84,88,223,0.2)] h-[200px] z-10 rounded-sm">
       </div>
-      <div className="absolute bottom-0 left-0">
-      <Image src="/shadowBottom.svg" alt={"shadowSvg"} width={588} height={723}/>
-      </div>
-      <nav className="px-[144px] py-6 flex items-center justify-between">
+      
+      <nav className="px-[144px] pt-6 pb-2 flex items-center justify-between">
         <Image src="/LogoGroup.svg" alt={"shadowSvg"} width={130} height={24}/>
-        <div></div>
-        <div></div>
+        <div className="flex items-center gap-9 px-4 py-3">
+          <Link href={""} className=" text-sm tracking-tighter items-start font-semibold text-slate-50 ">Features</Link>
+          <Link href={""} className=" text-sm tracking-tighter items-start font-medium text-slate-50 ">About</Link>
+          <Link href={""} className=" text-sm tracking-tighter items-start font-medium text-slate-50 ">Pricing</Link>
+          <Link href={""} className=" text-sm tracking-tighter items-start font-medium text-slate-50 ">Ressources</Link>
+          <Link href={""} className=" text-sm tracking-tighter items-start font-medium text-slate-50 ">Contact</Link>
+        </div>
+        <div className="flex items-center gap-9 ">
+          <div className="text-sm text-slate-50">Log in</div>
+          <Link href={""} className="px-4 py-2 text-cente text-sm tracking-tighter bg-[#4439C0] rounded-3xl text-white ">Get started</Link>
+        </div>
       </nav>
+      <div className="flex flex-col  items-center justify-center">
+        <div>
+          <Image src="/HeroImage.svg" alt={"shadowSvg"} width={341} height={364}/>
+        </div>
+        <div className="flex flex-col items-center gap-7 max-w-[668px]">
+          <div className="flex flex-col items-center gap-4   ">
+            <div className=" text-5xl text-slate-50 font-semibold text-center tracking-[-3%] leading-[60px] " >Elevate Your Day with Otsu Your Personal Assistant</div>
+            <div className="text-sm text-slate-50" >Experience the future of personal assistance, and the luxury of smart productivity.</div>
+          </div>
+          <Link href={""} className="px-4 py-2 text-cente text-base tracking-tighter bg-[#4439C0] rounded-3xl text-white ">Get started</Link>
+        </div>
+      </div>
     </main>
   );
 }
