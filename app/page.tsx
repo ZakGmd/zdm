@@ -13,7 +13,7 @@ export default function Home() {
       <nav className="px-[144px] pt-6 pb-2 flex items-center justify-between">
         <Image src="/LogoGroup.svg" alt={"shadowSvg"} width={130} height={24}/>
         <div className="flex items-center gap-9 px-4 py-3">
-          <Link href={""} className=" text-sm tracking-tighter items-start font-semibold text-slate-50 ">Features</Link>
+          <Link href="/second" className=" text-sm tracking-tighter items-start font-semibold text-slate-50 ">Features</Link>
           <Link href={""} className=" text-sm tracking-tighter items-start font-medium text-slate-50 ">About</Link>
           <Link href={""} className=" text-sm tracking-tighter items-start font-medium text-slate-50 ">Pricing</Link>
           <Link href={""} className=" text-sm tracking-tighter items-start font-medium text-slate-50 ">Ressources</Link>
