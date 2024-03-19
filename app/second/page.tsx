@@ -5,20 +5,7 @@ export default function Second(){
 
     return(
       <>
-      <nav className="px-[144px] pt-6 pb-2 flex items-center justify-between">
-        <Image src="/LogoGroup.svg" alt={"shadowSvg"} width={130} height={24}/>
-        <div className="flex items-center gap-9 px-4 py-3">
-          <Link href={""} className=" text-sm tracking-tighter items-start font-semibold text-slate-50 ">Features</Link>
-          <Link href={""} className=" text-sm tracking-tighter items-start font-medium text-slate-50 ">About</Link>
-          <Link href={""} className=" text-sm tracking-tighter items-start font-medium text-slate-50 ">Pricing</Link>
-          <Link href={""} className=" text-sm tracking-tighter items-start font-medium text-slate-50 ">Ressources</Link>
-          <Link href={""} className=" text-sm tracking-tighter items-start font-medium text-slate-50 ">Contact</Link>
-        </div>
-        <div className="flex items-center gap-9 ">
-          <div className="text-sm text-slate-50">Log in</div>
-          <Link href={""} className="px-4 py-2 text-cente text-sm tracking-tighter bg-[#4439C0] rounded-3xl text-white ">Get started</Link>
-        </div>
-      </nav>
+      
       <div className="flex items-center justify-between pt-[174px] pr-[295px] pl-[132px] ">
         <div className="flex flex-col items-start gap-[44px]">
           <div className="flex flex-col max-w-[438px] w-full items-start gap-4 ">
