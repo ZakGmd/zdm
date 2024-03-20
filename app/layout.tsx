@@ -26,7 +26,7 @@ export default function RootLayout({
           <Link href="/" className=" text-sm tracking-tighter items-start font-semibold text-slate-50 ">Features</Link>
           <Link href="/second" className=" text-sm tracking-tighter items-start font-medium text-slate-50 ">About</Link>
           <Link href="/third" className=" text-sm tracking-tighter items-start font-medium text-slate-50 ">Pricing</Link>
-          <Link href="/" className=" text-sm tracking-tighter items-start font-medium text-slate-50 ">Ressources</Link>
+          <Link href="/fourth" className=" text-sm tracking-tighter items-start font-medium text-slate-50 ">Ressources</Link>
           <Link href="/" className=" text-sm tracking-tighter items-start font-medium text-slate-50 ">Contact</Link>
         </div>
         <div className="flex items-center gap-9 ">
