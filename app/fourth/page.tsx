@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Popup from "../ui/popup";
 
 export default function Fourth(){
 
@@ -27,15 +28,7 @@ export default function Fourth(){
                     <div className="text-[16px] font-normal leading-5 tracking-[-0.32px] text-white/70 flex-1  ">Hello Moussaab! I&apos;m Otsu, your personal productivity partner. Let&apos;s elevate your efficiency and scale new heights together.</div>
                 </div>
                 <div className="flex items-center justify-between w-full gap-[100px]">
-                    <div className="w-[227px] flex py-2 pl-3 pr-2 items-center rounded-xl  bg-white/10 shadow-[0px_0px_0px_0.6px_rgba(0, 0, 0, 0.10), 0px_3px_2px_-1px_rgba(0, 0, 0, 0.05)] backdrop-blur-[4px] ml-[-160px]">
-                        <div className="flex items-center gap-3 flex-1 self-stretch">
-                            <Image src={"document.svg"} alt={""} height={38} width={38} />
-                            <div className="flex flex-col items-start  ">
-                                <div className="text-[13px] font-medium leading-4 tracking-[-0.13px] text-white">Documents</div>
-                                <div className="text-[11px] font-normal text-ellipsis leading-4 tracking-[-0.11px] text-white/60">Adding 213 new files</div>
-                            </div>
-                        </div>
-                    </div>
+                    <Popup title="Documents" comment="Adding 213 new files" src="document.svg" classname={""} />
                     <div className="pt-[5px] inline-flex items-center gap-4 pl-1 ">
                         <div className="w-[300px] text-right text-[16px] font-normal leading-5 tracking-[-0.32px] text-white/90 ">I need some leads!</div>
                         <Image src={"avatar.svg"} alt={"avatarLogoEmpty"} width={28} height={28} className="z-10"/>
@@ -46,26 +39,11 @@ export default function Fourth(){
                         <Image src={"aiAvatar.svg"} alt={"avatar for ai svg"} width={28} height={28} lazyBoundary="true" className="z-20"/>
                         <div className="text-[16px] font-normal leading-5 tracking-[-0.32px] bg-clip-text text-transparent bg-gradient-to-b from-white from-4.91% to-transparent to-40.91% flex-1  ">Need assistance with your schedule? Say no more. Let&apos;s synchronize your calendars and start optimizing your time right away.</div>
                   </div>
-                  <div className="w-[227px] absolute right-[-134px] flex py-2 pl-3 pr-2 items-center rounded-xl  bg-white/10 shadow-[0px_0px_0px_0.6px_rgba(0, 0, 0, 0.10), 0px_3px_2px_-1px_rgba(0, 0, 0, 0.05)] backdrop-blur-[4px] ">
-                        <div className="flex items-center gap-3 flex-1 self-stretch">
-                            <Image src={"inbox.svg"} alt={"inbox logo svg"} height={38} width={38} />
-                            <div className="flex flex-col items-start  ">
-                                <div className="text-[13px] font-medium leading-4 tracking-[-0.13px] text-white">Inbox</div>
-                                <div className="text-[11px] font-normal text-ellipsis leading-4 tracking-[-0.11px] text-white/60">You have new emails.</div>
-                            </div>
-                        </div>
-                  </div>
+                  <Popup title="Inbox" comment="You have new emails." src="analytics.svg" classname="absolute right-[-134px]" />
                  
                 </div>
-                <div className="w-[227px]  ml-[-100px] flex py-2 pl-3 pr-2 items-center rounded-xl  bg-white/10 shadow-[0px_0px_0px_0.6px_rgba(0, 0, 0, 0.10), 0px_3px_2px_-1px_rgba(0, 0, 0, 0.05)] backdrop-blur-[4px] ">
-                        <div className="flex items-center gap-3 flex-1 self-stretch">
-                            <Image src={"analytics.svg"} alt={"analytics logo svg"} height={38} width={38} />
-                            <div className="flex flex-col items-start  ">
-                                <div className="text-[13px] font-medium leading-4 tracking-[-0.13px] text-white">Analytics</div>
-                                <div className="text-[11px] font-normal text-ellipsis leading-4 tracking-[-0.11px] text-white/60">Check your data for this m...</div>
-                            </div>
-                        </div>
-                  </div>
+                <Popup title="Analytics" comment="Check your data for this m..." src="inbox.svg" classname="ml-[-100px]" />
+                
              </div>
             </div>
           </div>
