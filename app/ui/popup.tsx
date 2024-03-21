@@ -1,6 +1,8 @@
-import React from 'react'
+"use client"
 import Image from 'next/image'
-
+import { gsap } from 'gsap';
+import { useRef } from "react";
+import {useGSAP} from '@gsap/react'
 interface PopupTypes{
   title: string ; 
   comment: string ; 

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Card from "../ui/card";
 
 
 export default function Third(){
@@ -36,46 +37,9 @@ export default function Third(){
                         </div>
                     </div>
                     <div className="flex items-start gap-[21px] ml-[-60px]">
-                        <div className=" w-[232px] h-[248px] px-[14px] pt-[20px] z-1S0 -rotate-2 shrink-0 rounded-2xl border border-white/15 bg-gradient-to-b from-[#1c1926f5] from-[-10.57%] to-[#000000f5] to-133.78% shadow-[0px_5px_4px_-1px_rgba(0, 0, 0, 0.15), 0px_0px_20px_0px_rgba(255, 255, 255, 0.03)] hover:transform hover:transition hover:duration-300 hover:ease-in-out hover:rotate-[-4deg] hover:translate-y-[-10px] cursor-pointer">
-                            <div className="flex flex-col gap-[5.69px] ">
-                            <div className=" pl-[9.16px] inline-flex items-center gap-[10.74px] ">
-                                <Image src={"cardAvatar1.svg"} alt={""} width={36} height={36}/>
-                                <div className="flex flex-col items-start -rotate-2 ">
-                                    <div className="text-[16px] font-medium leading-5 tracking-[-0.32px] text-white/90">Bryn Booker</div>
-                                    <div className="text-[12px] font-normal leading-[16px] tracking-[-0.12px] text-white/50 ">CEO @bookerai</div>
-                                </div>
-                            </div>
-                            <div className="w-[208px] h-[52px] shrink-0 rounded-md bg-[#ffffff08] -rotate-2"></div>
-                            </div>
-                            
-                        </div>
-                        <div className=" w-[232px] h-[248px] px-[14px] pt-[20px] z-1S0 rotate-1 shrink-0 rounded-2xl border border-white/15 bg-gradient-to-b from-[#1c1926f5] from-[-10.57%] to-[#000000f5] to-133.78% shadow-[0px_5px_4px_-1px_rgba(0, 0, 0, 0.15), 0px_0px_20px_0px_rgba(255, 255, 255, 0.03)] hover:transform hover:transition hover:duration-300 hover:ease-in-out hover:rotate-[0deg] hover:translate-y-[-15px] cursor-pointer ">
-                            <div className="flex flex-col gap-[11.23px] ">
-                            <div className=" pl-[9.16px] inline-flex items-center gap-[10.74px] ">
-                                <Image src={"cardAvatar2.svg"} alt={""} width={36} height={36}/>
-                                <div className="flex flex-col items-start rotate-1 ">
-                                    <div className="text-[16px] font-medium leading-5 tracking-[-0.32px] text-white/90">Bryn Booker</div>
-                                    <div className="text-[12px] font-normal leading-[16px] tracking-[-0.12px] text-white/50 ">CEO @bookerai</div>
-                                </div>
-                            </div>
-                            <div className="w-[208px] h-[52px] shrink-0 rounded-md bg-[#ffffff08] rotate-1"></div>
-                            </div>
-                            
-                        </div>
-                        <div className=" w-[232px] h-[248px] px-[14px] pt-[20px] z-1S0 rotate-3  shrink-0 rounded-2xl border border-white/15 bg-gradient-to-b from-[#1c1926f5] from-[-10.57%] to-[#000000f5] to-133.78% shadow-[0px_5px_4px_-1px_rgba(0, 0, 0, 0.15), 0px_0px_20px_0px_rgba(255, 255, 255, 0.03)] hover:transform hover:transition hover:duration-300 hover:ease-in-out hover:rotate-[4deg] hover:translate-y-[-10px] cursor-pointer ">
-                            <div className="flex flex-col gap-[14px] ">
-                            <div className=" pl-[9.16px] inline-flex items-center gap-[10.74px] ">
-                                <Image src={"cardAvatar3.svg"} alt={""} width={36} height={36}/>
-                                <div className="flex flex-col items-start rotate-3  ">
-                                    <div className="text-[16px] font-medium leading-5 tracking-[-0.32px] text-white/90">Bryn Booker</div>
-                                    <div className="text-[12px] font-normal leading-[16px] tracking-[-0.12px] text-white/50 ">CEO @bookerai</div>
-                                </div>
-                            </div>
-                            <div className="w-[208px] h-[52px] shrink-0 rounded-md bg-[#ffffff08] rotate-3 "></div>
-                            </div>
-                            
-                        </div>
-                    
+                        <Card title={"Bryn Booker"} comment={"CEO @bookerai"} src={"cardAvatar1.svg"} classname={"-rotate-2 hover:rotate-[-4deg] "} />
+                        <Card title={"Drik Horton"} comment={"Founder of @horton"} src={"cardAvatar2.svg"} classname={"rotate-1 hover:rotate-[0deg]  "} />
+                        <Card title={"Adam Kramer"} comment={"Founder of Listup.ai"} src={"cardAvatar3.svg"} classname={"hover:rotate-[4deg] rotate-3 "}/> 
                     </div>
 
                 </div>
