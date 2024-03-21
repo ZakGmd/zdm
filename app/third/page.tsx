@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Card from "../ui/card";
+import Text from "../ui/text";
 
 
 export default function Third(){
@@ -31,9 +32,9 @@ export default function Third(){
                             <div className="max-w-[430px] w-full text-right text-[16px] font-normal leading-5 tracking-[-0.32px] text-white/90 ">I need some leads!</div>
                             <Image src={"avatar.svg"} alt={"avatarLogoEmpty"} width={28} height={28}/>
                         </div>
-                        <div className="max-w-[380px] flex items-start gap-4 ">
+                        <div className="max-w-[400px] flex items-start gap-4 ">
                             <Image src={"aiAvatar.svg"} alt={"avatar for ai"} width={28} height={28} />
-                            <div className=" flex-1 text-white/70 text-[16px] leading-5 tracking-[-0.32px] ">Absolutely, I can help with that! I&apos;ve just scoured the internet for potential leads that align with our targets.</div>
+                            <Text />
                         </div>
                     </div>
                     <div className="flex items-start gap-[21px] ml-[-60px]">
