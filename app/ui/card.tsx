@@ -38,8 +38,8 @@ export default function Card(){
                 <div className="flex flex-col gap-[26px] items-start ">
                     <div className="px-[60px] pt-[31px] w-full flex flex-col gap-[23px]  ">
                         <div className="text-center date text-[13px] font-medium leading-5 tracking-[-0.26px] text-white/80 ">Today <span className="text-white/50">04:20 PM</span></div>
-                        <Prompt />
-                        <AiText />
+                        <Prompt props={"I need some leads!"} classname={"firstPrompt"} />
+                        <AiText classname={"firstAiText max-w-[286px]"} texts={"Absolutely, I can help with that! I've just scoured the internet for potential leads that align with our targets."} />
                     </div>
                     <div className="flex items-start gap-[21px] ml-[-60px]">
                         <Cards title={"Bryn Booker"} comment={"CEO @bookerai"} src={"cardAvatar1.svg"} classname={"-rotate-2 hover:rotate-[-4deg] "} />
