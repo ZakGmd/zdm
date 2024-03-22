@@ -22,7 +22,19 @@ export default function Popup({title , comment ,src , classname}:PopupTypes) {
         y: 43.55 ,
         duration: 0.4 ,
         ease:"power2.out" ,
-      },"+=1")
+      },"+=2.675").from(".secondPopup",{
+        autoAlpha: 0 ,
+        scale: 0.75,    
+        y: 43.55 ,
+        duration: 0.4 ,
+        ease:"power2.out" ,
+      },"+=1.8").from(".thirdPopup",{
+        autoAlpha: 0 ,
+        scale: 0.75,    
+        y: 43.55 ,
+        duration: 0.4 ,
+        ease:"power2.out" ,
+      },"+=0.4")
   },{scope: popup})
   return (
     <div ref={popup}>

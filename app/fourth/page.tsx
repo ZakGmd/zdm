@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Popup from "../ui/popup";
 import AiText from "../ui/aiText";
+import Prompt from "../ui/prompt";
 
 export default function Fourth(){
 
@@ -24,19 +25,13 @@ export default function Fourth(){
               <Link href={""} className="flex justify-center items-center gap-[10px] rounded-[56px] py-[12px] px-6 bg-gradient-to-br from-[#4339BF] from-[74.55%] to-[#2E1C62] to-[131.94%] text-white text-[18px] font-medium leading-[20px] tracking-[-0.36px]">Get started</Link>
              </div>
              <div className="flex flex-col gap-[26px] items-start pl-[50.51px] pt-[29px] pr-[42px]  ">
-                <AiText classname={"secondAiText max-w-[330px]"} texts={"Hello Moussaab! I'm Otsu, your personal productivity partner. Let's elevate your efficiency and scale new heights together."}/>
+                <AiText classname={"secondAiText max-w-[330px]"} texts={"Hello Moussaab! I'm Otsu, your personal productivity partner. Let's elevate your efficiency and scale new heights together."} aiClass={"secondAiLogo"}/>
                 <div className="flex items-center justify-between w-full gap-[100px]">
                     <Popup title="Documents" comment="Adding 213 new files" src="document.svg" classname={"firstPopup"} />
-                    <div className="pt-[5px] inline-flex items-center gap-4 pl-1 ">
-                        <div className="w-[300px] text-right text-[16px] font-normal leading-5 tracking-[-0.32px] text-white/90 ">Can you help me with my schedule?</div>
-                        <Image src={"avatar.svg"} alt={"avatarLogoEmpty"} width={28} height={28} className="z-10"/>
-                    </div>
+                    <Prompt props={"Can you help me with my schedule?"} classname={"secondPrompt"} />
                 </div>
                 <div className="flex items-center relative  w-full ">
-                  <div className="inline-flex items-start gap-4 max-w-[380px]">
-                        <Image src={"aiAvatar.svg"} alt={"avatar for ai svg"} width={28} height={28} className="z-20"/>
-                        <div className="text-[16px] font-normal leading-5 tracking-[-0.32px] bg-clip-text text-transparent bg-gradient-to-b from-white from-4.91% to-transparent to-40.91% flex-1  ">Need assistance with your schedule? Say no more. Let&apos;s synchronize your calendars and start optimizing your time right away.</div>
-                  </div>
+                  <AiText classname={"thirdAiText max-w-[330px]"} texts={"Need assistance with your schedule? Say no more. Let's synchronize your calendars and start optimizing your time right away."} aiClass={"thirdAiLogo"}/>
                   <Popup title="Inbox" comment="You have new emails." src="analytics.svg" classname="absolute right-[-134px] secondPopup" />
                  
                 </div>
