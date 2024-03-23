@@ -16,7 +16,13 @@ export default function Fourth(){
         tl.from(".reff",{
             autoAlpha: 0,
             duration: 1 ,
-          }).from(".firstPop",{
+          }).from(".lines",{
+            autoAlpha: 0 ,
+            
+            duration: 0.6 ,
+            y:1000 ,
+            ease: "power3.out",
+          },"-=0.8").from(".firstPop",{
             autoAlpha: 0 ,
             y: 20 ,
             duration: 0.425 ,
@@ -35,12 +41,17 @@ export default function Fourth(){
             duration: 0.530 ,
             scaleX: 0.03 ,
             
-          },"-=1").from(".btnText",{
+          },"-=1").from(".rectAnimat",{
+            y: 1000 , 
+            autoAlpha: 0 , 
+            duration: 1 ,
+            ease: "power4.out"
+          },"-=0.5").from(".btnText",{
             autoAlpha: 0 ,
             y:30 ,
             duration: 0.45 ,
             ease: "power4.out",
-          },"-=0.76")
+          },"-=1.3")
     },{scope: container})
     return(
         <div ref={container}>
@@ -48,9 +59,9 @@ export default function Fourth(){
             </div>  
          <div className="w-full items-center justify-center flex flex-col overflow-hidden ">
           <div className="relative  w-[619px]   bg-gradient-to-b from-transparent   from-10%   to-[#0D0D0C] to-30%  ">
-            <div className="w-[588px] h-[773px] absolute bottom-[-480px] rounded-[16px] bg-[#5458dfb3] blur-[240px] "></div>
-            <div className="absolute w-[0.7px] h-[784.001px] bg-gradient-to-br from-transparent from-25%  via-white/20 via-49.09% to-white/5 to-[75.26%] "></div>
-            <div className="absolute right-0 w-[0.7px] h-[784.001px] bg-gradient-to-br from-transparent from-45%  via-white/20 via-65.09% to-white/5 to-[75.26%] "></div>
+            <div className="rectAnimat w-[588px] h-[773px] absolute bottom-[-480px] rounded-[16px] bg-[#5458dfb3] blur-[240px] "></div>
+            <div className="lines absolute w-[0.7px] h-[784.001px] bg-gradient-to-br from-transparent from-25%  via-white/20 via-49.09% to-white/5 to-[75.26%] "></div>
+            <div className="lines absolute right-0 w-[0.7px] h-[784.001px] bg-gradient-to-br from-transparent from-45%  via-white/20 via-65.09% to-white/5 to-[75.26%] "></div>
             <div className=" pt-[78px] w-full flex  flex-col gap-9 items-start ">
              <div className=" flex flex-col w-full items-center justify-center gap-6">
               <div className="firstPop py-[6px] px-3 rounded-[56px]   bg-gradient-to-b from-[#ffffff14] from-74.55% to-[#40404014] to-131.94% shadow-[0px_1px_2px_0px_rgba(0, 0, 0, 0.10), 0px_3px_7px_1px_rgba(0, 0, 0, 0.20) inset] text-white text-center text-[13px] font-medium leading-5 tracking-[-0.26px] ">New Update <span className="text-[#8B8B8B]">Otsu calendar is here!</span></div>

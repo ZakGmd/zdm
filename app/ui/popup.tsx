@@ -28,13 +28,13 @@ export default function Popup({title , comment ,src , classname}:PopupTypes) {
         y: 43.55 ,
         duration: 0.425 ,
         ease:"power4.out" ,
-      },"+=0.01").from(".thirdPopup",{
+      },"-=0.15").from(".thirdPopup",{
         autoAlpha: 0 ,
         scale: 0.75,    
         y: 43.55 ,
         duration: 0.425 ,
         ease:"power4.out" ,
-      },"+=0.001")
+      },"-=0.12")
   },{scope: popup})
   return (
     <div ref={popup}>
