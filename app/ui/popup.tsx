@@ -20,21 +20,21 @@ export default function Popup({title , comment ,src , classname}:PopupTypes) {
         autoAlpha: 0 ,
         scale: 0.75,    
         y: 43.55 ,
-        duration: 0.4 ,
-        ease:"power2.out" ,
-      },"+=2.675").from(".secondPopup",{
+        duration: 0.425 ,
+        ease:"power4.out" ,
+      },"+=4.8").from(".secondPopup",{
         autoAlpha: 0 ,
         scale: 0.75,    
         y: 43.55 ,
-        duration: 0.4 ,
-        ease:"power2.out" ,
-      },"+=1.8").from(".thirdPopup",{
+        duration: 0.425 ,
+        ease:"power4.out" ,
+      },"+=0.01").from(".thirdPopup",{
         autoAlpha: 0 ,
         scale: 0.75,    
         y: 43.55 ,
-        duration: 0.4 ,
-        ease:"power2.out" ,
-      },"+=0.4")
+        duration: 0.425 ,
+        ease:"power4.out" ,
+      },"+=0.001")
   },{scope: popup})
   return (
     <div ref={popup}>

@@ -20,7 +20,7 @@ export default function Prompt({props , classname}:{props: string , classname: s
             y: 100 ,
             duration: 0.4 ,
             ease: "power2.out", 
-        },"+=0.96")
+        },"+=1.430")
     },{scope: prompt})
 
     return(

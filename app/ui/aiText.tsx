@@ -34,7 +34,7 @@ export default function AiText({classname , texts , aiClass}:AiTypes){
         }).from(splitSecondText.words,{
           autoAlpha: 0 ,
           stagger: 0.08 ,
-        },"+=1.2").from(".secondAiLogo",{
+        },"-=0.5").from(".secondAiLogo",{
           autoAlpha: 0 ,
           y:30 ,
           ease: "power2.out" ,
@@ -42,7 +42,7 @@ export default function AiText({classname , texts , aiClass}:AiTypes){
         },"-=2.1").from(splitThirdText.words,{
           autoAlpha: 0 ,
           stagger: 0.08 ,
-        },"+=1").from(".thirdAiLogo",{
+        },"+=1.4").from(".thirdAiLogo",{
           autoAlpha: 0 ,
           y:30 ,
           ease: "power2.out" ,
