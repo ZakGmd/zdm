@@ -18,7 +18,7 @@ export default function Card(){
             y:200 ,
             ease: "power2.out" ,
             duration: 1 ,
-        }).from(".date",{
+        },"-=0.05").from(".date",{
             autoAlpha: 0,
             duration:0.8 ,
             ease: "power2.out" ,

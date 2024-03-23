@@ -34,7 +34,7 @@ export default function AiText({classname , texts , aiClass}:AiTypes){
         }).from(splitSecondText.words,{
           autoAlpha: 0 ,
           stagger: 0.08 ,
-        },"-=1.5").from(".secondAiLogo",{
+        },"+=1.2").from(".secondAiLogo",{
           autoAlpha: 0 ,
           y:30 ,
           ease: "power2.out" ,

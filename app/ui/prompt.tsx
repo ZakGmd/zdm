@@ -15,7 +15,7 @@ export default function Prompt({props , classname}:{props: string , classname: s
             y: 100 ,
             duration: 0.4 ,
             ease: "power2.out", 
-        },"+=0.96").from(".secondPrompt",{
+        },"+=1.2").from(".secondPrompt",{
             autoAlpha: 0 ,
             y: 100 ,
             duration: 0.4 ,
