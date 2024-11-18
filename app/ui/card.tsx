@@ -15,8 +15,8 @@ export default function Card(){
         const tl = gsap.timeline() ;
         tl.from(container.current,{
             autoAlpha: 0 ,
-            y:200 ,
-            ease: "power2.out" ,
+            y:2500 ,
+            ease: "power2" ,
             duration: 1 ,
         },"-=0.05").from(".date",{
             autoAlpha: 0,

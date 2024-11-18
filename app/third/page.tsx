@@ -49,7 +49,7 @@ export default function Third(){
            <div className="  mt-[-200px]  w-[682px] bg-[#6941c6b3] blur-[242px] h-[221px] "></div>
           </div>
           <div className="w-full  items-center justify-center flex flex-col overflow-hidden " >
-          <div className=" px-[436px] pt-[74px] flex flex-col gap-9 items-start ">
+          <div className=" px-[436px] pt-[108px] flex flex-col gap-9 items-start ">
             <div className="flex flex-col w-full items-center justify-center gap-6">
                 <div className="firstPop py-[6px] px-3 rounded-[56px] border-[0.5px] border-white bg-gradient-to-b from-[#ffffff14] from-74.55% to-[#40404014] to-131.94% shadow-[0px_1px_2px_0px_rgba(0, 0, 0, 0.10), 0px_3px_7px_1px_rgba(0, 0, 0, 0.20) inset] text-white text-center text-[13px] font-medium leading-5 tracking-[-0.26px] ">
                   New Update <span className="text-[#8B8B8B]">Joe,Sales artisan</span>

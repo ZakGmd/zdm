@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 import SplitText from "gsap-trial/SplitText" ;
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(SplitText) ;
+
 export default function Home() {
   const containe = useRef(null) ;
   useGSAP(()=>{
@@ -16,26 +17,21 @@ export default function Home() {
       autoAlpha: 0,
       duration: 1 ,
       ease:"power2.in",
-    
-      
     },"").from(".txt",{
       autoAlpha: 0 ,
       duration: 1 ,
       y: -20 , 
       ease: "power2" ,
-      
     },"-=0.3").from(".txt2",{
       y:-20 ,
       duration: 1,
       ease: "power2" ,
       autoAlpha: 0 ,
-     
     },"-=0.6").to(".reff",{
       y:-20 ,
       duration: 1 ,
       ease: "power4.out" ,
       autoAlpha: 1 ,
-     
     },"-=1.1").from(".btn",{
       autoAlpha: 0 ,
       ease:"back.out",
@@ -44,10 +40,10 @@ export default function Home() {
       
     },"-=1.2").from(".btnText",{
       autoAlpha: 0 ,
-      y:40 ,
-      duration: 0.45 ,
-      ease: "power4.out",
-    },"-=0.76").from(".logos",{
+        y:30 ,
+        duration: 0.45 ,
+        ease: "power4.out",
+    },"-=0.9").from(".logos",{
       autoAlpha: 0,
       duration: 1 ,
       ease:"power2.in",

@@ -72,7 +72,7 @@ export default function Fourth(){
              <div className="flex items-center justify-center w-full ">
               <Link href={""} className="btn flex justify-center items-center gap-[10px] rounded-[56px] py-[12px] px-6  bg-gradient-to-b from-[#663ade] from-[-41.25%] to-[#2E1C62] text-white text-[18px] font-medium leading-[20px] tracking-[-0.36px]  "><span className="btnText">Get started</span> </Link>
              </div>
-             <div className="flex flex-col gap-[26px] items-start pl-[50.51px] pt-[70px] pr-[42px]  ">
+             <div className="flex flex-col gap-[26px] items-start pl-[50.51px] pt-[103px] pr-[42px]  ">
                 <AiText classname={"secondAiText max-w-[330px]"} texts={"Hello Moussaab! I'm Otsu, your personal productivity partner. Let's elevate your efficiency and scale new heights together."} aiClass={"secondAiLogo"}/>
                 <div className="flex items-center justify-between w-full gap-[100px]">
                     <Popup title="Documents" comment="Adding 213 new files" src="document.svg" classname={"firstPopup"} />
