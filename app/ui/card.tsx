@@ -33,7 +33,7 @@ export default function Card(){
 
     return(
         <div className="w-full relative flex flex-col items-center justify-center mt-[64px]" ref={container}>
-            <div className="absolute shape top-[100px] w-[588px] h-[323px] shrink-0 rounded-[16px] bg-[#5458dfb3] blur-[242px] -z-10"></div>
+            <div className="absolute shape top-[100px] w-[588px] h-[323px] shrink-0 rounded-[16px] bg-[#6941c648] blur-[242px] -z-10"></div>
             <div className="max-w-[631px] w-full h-[340px]   shrink-0 rounded-2xl border border-white/15 bg-gradient-to-b from-[#1c1926f5] from-[-10.57%] to-[#000000f5] to-133.78% shadow-[0px_5px_4px_-1px_rgba(0, 0, 0, 0.15), 0px_0px_20px_0px_rgba(255, 255, 255, 0.03)]">
                 <div className="flex flex-col gap-[26px] items-start  ">
                     <div className="px-[60px] pt-[31px] w-full flex flex-col gap-[23px]  ">

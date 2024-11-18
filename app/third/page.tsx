@@ -44,11 +44,12 @@ export default function Third(){
     }, {scope: containe})
     return(
         
-        <div ref={containe} >
-          <div className="reff absolute top-[-200px] left-[440px] w-[790px] shadow-[0_210px_430px_30px_rgba(84,88,223,0.17)] h-[200px] z-10 rounded-full">
+        <div ref={containe} className=" flex flex-col " >
+          <div className=" reff w-full relative flex items-center justify-center">
+           <div className="  mt-[-200px]  w-[682px] bg-[#6941c6b3] blur-[242px] h-[221px] "></div>
           </div>
-          <div className="w-full items-center justify-center flex flex-col overflow-hidden " >
-          <div className=" px-[436px] pt-[78px] flex flex-col gap-9 items-start ">
+          <div className="w-full  items-center justify-center flex flex-col overflow-hidden " >
+          <div className=" px-[436px] pt-[74px] flex flex-col gap-9 items-start ">
             <div className="flex flex-col w-full items-center justify-center gap-6">
                 <div className="firstPop py-[6px] px-3 rounded-[56px] border-[0.5px] border-white bg-gradient-to-b from-[#ffffff14] from-74.55% to-[#40404014] to-131.94% shadow-[0px_1px_2px_0px_rgba(0, 0, 0, 0.10), 0px_3px_7px_1px_rgba(0, 0, 0, 0.20) inset] text-white text-center text-[13px] font-medium leading-5 tracking-[-0.26px] ">
                   New Update <span className="text-[#8B8B8B]">Joe,Sales artisan</span>
@@ -57,7 +58,7 @@ export default function Third(){
                 <div className="text max-w-[468px] text-white/70 text-center text-[20px] font-normal leading-[26px] tracking-[-0.18px] pt-[2px]">Meet AI Artisans - Revolutionizing Team Integration with Feature-rich Software</div>
             </div>
             <div className="flex items-center justify-center w-full">
-                <Link href={""} className="flex btn overflow-hidden justify-center items-center gap-[10px] rounded-[56px] py-[12px] px-6 bg-gradient-to-br from-[#5834BD] from-[74.55%] to-[#2E1C62] to-[131.94%] text-white text-[18px] font-medium leading-[20px] tracking-[-0.36px]"><span className="btnText invisible">Hire Ava</span></Link>
+                <Link href={""} className="flex btn overflow-hidden justify-center items-center gap-[10px] rounded-[56px] py-[12px] px-6 bg-gradient-to-b from-[#663ade] from-[-41.25%] to-[#2E1C62] to-[131.94%] text-white text-[18px] font-medium leading-[20px] tracking-[-0.36px] hover:bg-[#663ade]  "><span className="btnText invisible">Hire Ava</span></Link>
             </div>
           </div>
           <Card/>

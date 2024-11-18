@@ -19,19 +19,19 @@ export default function RootLayout({
   return (
     <html lang="en">
      
-      <body className={`${inter.className} bg-[#0B0B0A]`}>
+      <body className={`${inter.className} bg-[#0B0B0A] h-full`}>
          <nav className="px-[144px] pt-6 pb-2 flex items-center justify-between">
         <Image src="/LogoGroup.svg" alt={"shadowSvg"} width={130} height={24}/>
-        <div className="flex items-center gap-9 px-4 py-3">
+        <div className="flex items-center gap-9 px-4 py-3 z-30  ">
           <Link href="/" className=" text-sm tracking-tighter items-start font-semibold text-slate-50 ">Features</Link>
           <Link href="/second" className=" text-sm tracking-tighter items-start font-medium text-slate-50 ">About</Link>
           <Link href="/third" className=" text-sm tracking-tighter items-start font-medium text-slate-50 ">Pricing</Link>
           <Link href="/fourth" className=" text-sm tracking-tighter items-start font-medium text-slate-50 ">Ressources</Link>
-          <Link href="/" className=" text-sm tracking-tighter items-start font-medium text-slate-50 ">Contact</Link>
+          
         </div>
         <div className="flex items-center gap-9 ">
           <div className="text-sm text-slate-50">Log in</div>
-          <Link href={"/"} className="px-4 py-2 text-cente text-sm tracking-tighter bg-[#4439C0] rounded-3xl text-white ">Get started</Link>
+          <Link href={"/"} className="px-4 py-2 text-cente text-sm tracking-tighter  bg-gradient-to-b from-[#663ade] from-[-41.25%] to-[#2E1C62] hover:bg-[#2E1C62]  rounded-3xl text-white transition duration-300 ">Get started</Link>
         </div>
          </nav>
         {children}
